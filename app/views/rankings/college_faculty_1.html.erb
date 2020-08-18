@@ -1,0 +1,120 @@
+<div class="platform__wrapper">
+  <div class="title_head_container">
+    <div class="head_image">
+    <%= image_tag "/header-back.png"%>
+    </div>
+    <div class="college_type">
+    <p>国立</p>
+    </div>
+    <div class="faculty_info_container">
+    <div class="faculty_info">
+      <a class="rankings_position">#1</a>
+      <a class="rankings_category">○○学部ランキング</a>
+      <h1 class="college_faculty_name">××大学〇〇学部</h1>
+      <a>×年制</a> <a>××県××市</a> <a>設立年度××××年</a>
+    </div>
+    <div class="faculty_info_option">
+        <a class="faculty_hp" href="https://www.ds.shiga-u.ac.jp/">大学HP</a>
+      <br>
+        <a class="mylist">
+          <%= fa_icon("heart", text:"マイリストに追加") %>
+        </a>
+    </div>
+    </div>
+  </div>
+
+  <div class="assessment_container">
+    <div class="total_grade">
+      <%= image_tag 'A<.png' %><br>
+      <a>UCP総合評価</a>
+    </div>
+    <div class="each_grade">
+      <ul class="each_grade_left">
+        <li class="eachone_grade">
+          <%= image_tag 'B<.png' %><a>教育</a>
+        </li>
+        <li class="eachone_grade">
+          <%= image_tag 'A.png' %><a>教員</a>
+        </li>
+        <li class="eachone_grade">
+          <%= image_tag 'B>.png' %><a>国際性</a>
+        </li>
+        <li class="eachone_grade">
+          <%= image_tag 'D<.png' %><a>口コミ</a>
+        </li>
+      </ul>
+      <ul class="each_grade_right">
+        <li class="eachone_grade">
+          <%= image_tag 'D<.png' %><a>費用</a>
+        </li>
+        <li class="eachone_grade">
+          <%= image_tag 'C<.png' %><a>設備</a>
+        </li>
+        <li class="eachone_grade">
+          <%= image_tag 'A>.png' %><a>学生生活</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ads"><%= image_tag'ads_sample.png'%></div>
+
+  <div class="about_container">
+    <div class="about_title">
+      <%= "××大学○○学部"%>
+    </div>
+    <div class="about_intro">
+      <%= "設置 20××年"%><br>
+      <%= "学部内容:_______________________________________________________
+_______________________________________________________________"%>
+    </div>
+    <div class="about_detail">
+        <div class="detail_left">
+          <%= "男:女  6:4"%><br>
+          <%= "取れる資格数 20" %>
+        </div>
+        <div class="detail_right">
+          <%= "学生:教職員 10:1"%><br>
+          <%= "留年率　2.1%"%>
+        </div>
+    </div>
+  </div>
+
+  <div class="adm_container">
+      <p class="adm_title">入学制度</p>
+      <p class="rate">倍率</p>
+      <div class="adm_container_in">
+        <div class="adm_container_left">
+          <ul>
+          <li>・Test Type A</li>
+          <li>・Test Type B</li>
+          <li>・Test Type C</li>
+          </ul>
+        </div>
+        <div class="adm_container_right">
+          <li>2.1倍</li>
+          <li>2.5倍</li>
+          <li>1.8倍</li>
+        </div>
+      </div>
+    <a><%= fa_icon("arrow-circle-right") %>詳しくみる</a>
+  </div>
+
+  <div class="cost_container">
+    <p>費用</p>
+    <div class="cost_container_in">
+      <div class="cost_container_left">
+        <p>4年総計</p> <br>
+        <p class="cost_four">¥2,053,214</p>
+      </div>
+      <div class="cost_container_right">
+        <p>年間平均学費 ¥600,000</p><br>
+        <p><%= fa_icon("arrow-circle-right") %>奨学金制度について</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ads"><%= image_tag'ads_sample.png'%></div>
+
+</div> 
+

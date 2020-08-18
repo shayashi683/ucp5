@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Unique College Project</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+  <header>
+    <div class="header-logo">
+      <%= image_tag('/ucplogo_official.png') %>
+    </div>
+      <ul class="header-menus">
+       <li>
+        <a href="/">Home</a>
+       </li>
+       <li>
+         <a href="/rankings">Rankings</a>
+       </li>
+       <li>
+         <a href="/picks">Picks</a>
+       </li>
+       <li>
+        <a href="/about">About</a>
+       </li>
+      </ul>
+
+      <ul class="header-icons">
+      <li> 
+        <%= image_tag('/icons/search_i.png') %> 
+      </li>
+      <li> 
+        <%= image_tag('/icons/bell_i.png') %> 
+      </li>
+      <li> 
+        <%= image_tag('/icons/account_i.png') %> 
+      </li>
+      </ul>
+
+</header>
+
+<%= yield %>
+
+  <footer>
+  <div class="footer__container">
+    <div class="footer-static-nav-container">
+      <%= image_tag('/ucplogo_official.png') %>
+      <div class="footer-social-buttons">
+        <a class="footer-social-button footer-social-button--facebook" href="https://www.facebook.com/nichesocial">
+        <span class="visually-hidden">Facebook</span></a>
+        <a class="footer-social-button footer-social-button--twitter" href="https://twitter.com/nichesocial">
+        <span class="visually-hidden">Twitter</span></a>
+        </div>
+    </div>
+    <div class="footer-dynamic-nav-container">
+      <h3 class="footer-tagline">あなたに最適な学びを</h3>
+        <ul class="footer-vertical-links">
+          <li class="footer-vertical-links__item">
+            <a href="/">Home</a>
+          </li>
+          <li class="footer-vertical-links__item">
+            <a href="/rankings">Rankings</a>
+          </li>
+          <li class="footer-vertical-links__item">
+            <a href="/picks">Picks</a>
+          </li>
+          <li class="footer-vertical-links__item">
+            <a href="/about">About</a>
+          </li>
+        </ul>
+        <ul class="footer-vertical-links2">
+          <li class="footer-vertical-links__item2">
+            <a href="/about/contact">Contact</a>
+          </li>
+          <li class="footer-vertical-links__item2">
+            <a href="/about/privacy">プライバシーポリシー</a>
+          </li>
+          <li class="footer-vertical-links__item2">
+            <a href="/about/cookie-policy">Cookieポリシー</a>
+          </li>
+        </ul>
+        <div class="footer-claim-cta">
+          <div class="footer-copyright">©<!-- -->2019<!-- --> ucpjapan.com</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+  </html>

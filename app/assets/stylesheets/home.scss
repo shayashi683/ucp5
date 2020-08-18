@@ -1,0 +1,237 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* reset ================================ */
+.platform__wrapper{
+    font-weight: 400;
+    color: #464646;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    width:auto;
+    position: relative;
+      top: 64px;
+}
+div {
+    display: block;
+}
+.search-header{
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.search-header-illustration img{
+    height: 120px;
+    position: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+.search-header__container{
+  background-color: white;
+  width:auto;
+}
+.search-header__content {
+    height: auto;
+    padding: 20px 20px 25px 15px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1080px;
+    position: relative;
+}
+.search-header-title img{
+  vertical-align: middle;
+  margin-right: 5%;
+  border-radius: 10px;
+  width: 280px;
+}
+.search-description{
+  padding: 0 0 0 30px;
+}
+.search-description h1{
+  font-family: 'Hiragino Mincho ProN';
+  padding: 0 0 10px 0;
+}
+.overflow-text__content a{
+    float:right;
+    color: rgb(0, 122, 200);
+    cursor: pointer;
+    font-weight: 600;
+    text-align: right;
+    background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0));
+}
+.social-share{
+  float: right;
+  display: flex;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 0px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 8px 12px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+/* contents */
+.top_container{
+  width: 85%;
+  max-width: 1080px;
+  padding-bottom: 20px;
+  margin: 20px auto;
+  background-color: white;
+  position: relative;
+}
+/* rankings */
+.rankings_container{
+  height: auto;
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  font-family: 'Hiragino Mincho ProN';
+  justify-content: center;
+  padding-top: 30px;
+  margin-bottom: 60px;
+}
+.rankings_container h1{
+  text-align: center;
+}
+
+.see_rankings{
+  position: absolute;
+	bottom: 30px;
+  right: 10%;
+}
+.see_rankings a{
+  background: #0066CC; /*背景色*/
+  padding: 0.5em;/*文字周りの余白*/
+  color: white;/*文字を白に*/
+  border-radius: 0.5em;/*角の丸み*/
+}
+
+.categories_container{
+  margin: auto;
+}
+
+.faculty_container{
+  height:auto;
+  width: 75%;
+}
+.categories_container li{
+  margin:auto;
+}
+.card{
+  margin: 20px auto;
+  border-radius: inherit;
+  background: #f5f5dc;
+  box-shadow: rgba(0, 0, 0, 0.098) 0 1px 4px, rgba(0, 0, 0, 0.098) 0 0 2px;
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+}
+.faculty_title_box{
+  padding: 10px 20px 5px 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 5px solid  #0066CC;
+}
+.faculty_contents{
+  display: flex;
+}
+.faculty_illustration img{
+  width: 200px;
+  margin: auto;
+}
+.card_inner{
+  width: cover;
+  margin: 5px 10px;
+}
+.card_inner a{
+  color: blue;
+  border-bottom: 1px solid blue;
+  float: right;
+  font-family: "Hiragino Sans";
+}
+/* picks */
+.picks_container{
+  position: relative;
+  width: 85%;
+  max-width: 1080px;
+  margin: 20px auto 100px auto;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.picks_container h1{
+  text-align: center;
+  margin: auto;
+  padding-top: 15px;
+  width: 90%;
+  font-family: 'Hiragino Mincho ProN';
+}
+.articles_container{
+      overflow-x: auto;
+      position: relative;
+}
+.articles_container li{
+    display: inline-block;
+    width: 30%;
+    height: 150px;
+    margin: 16px;
+    font-size: 48px;
+}
+.articles_container img{
+  width: 70%;
+  margin: auto;
+}
+.card h3{
+  padding: 5px 15px 5px 15px;
+  font-size: medium;
+}
+.see_articles{
+  position: absolute;
+	bottom: 30px;
+  right: 10%;
+}
+.see_articles a{
+  background: #0066CC; /*背景色*/
+  padding: 0.5em;/*文字周りの余白*/
+  color: white;/*文字を白に*/
+  border-radius: 0.5em;/*角の丸み*/
+}

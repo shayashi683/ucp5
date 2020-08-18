@@ -1,0 +1,264 @@
+// Place all the styles related to the rankings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* top*/
+.platform__wrapper{
+    font-weight: 400;
+    color: #464646;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: auto;
+    position: relative;
+      top: 64px;
+}
+
+/* college_faculty_1*/
+.platform__wrapper{
+    font-weight: 400;
+    color: #464646;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: auto;
+    position: relative;
+      top: 64px;
+}
+
+.title_head_container{
+    width: 100%;
+    border-bottom: 1px solid #707070;
+    border-right: 1px solid #707070; 
+    border-left: 1px solid #707070; 
+    margin-bottom: 20px;
+}
+.head_image img{
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+.college_type{
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px 20px 5px 20px;
+    height: 25px;
+    position: absolute;
+        top: 156px;
+        left: 5%;
+}
+.faculty_info_container{
+    width: 100%;
+}
+.faculty_info{
+    display: inline-block;
+    width: 60%;
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+    .rankings_position{
+        font-size: 20px;
+        color: #53A63A;
+        padding-top: 5px;
+    }
+    .rankings_category{
+        font-size: 20px;
+        color: #53A63A;
+        padding-top: 5px;
+    }
+    .faculty_info h1{
+        color: #2C33F6;
+    }
+.faculty_info_option{
+    float: right;
+    width: 35%;
+    top: 10px;
+    text-align: right;
+    margin: 30px 10px 0px 0px;
+}
+    .faculty_hp{
+        text-align: center;
+        font-size: 15px;
+        color: #707070;
+        text-decoration: underline;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 3px solid #707070;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .mylist{
+        text-align: center;
+        line-height: 50px;
+        font-size: 13px;
+        color: #707070;
+        padding: 2px 5px;
+        border: 3px solid #707070;
+        border-radius: 10px;
+    }
+    .mylist i {
+        padding-top: 10px;
+        font-size: 2em;
+        color: rgb(224, 0, 0);
+        }
+
+.assessment_container{
+    width: 100%;
+    height: auto;
+    border: 3px solid #707070;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow:5px 5px 5px;
+}
+    .total_grade{
+        width: 20%;
+        margin: auto 0 auto 20%;
+        padding: 20px 0px;
+    }
+        .total_grade img{
+            width: 100px;
+        }
+    .each_grade{
+        width: 50%;
+        margin: 10px 10px;
+        display: flex;
+    }
+    .each_grade_left{
+        width: 50%;
+    }
+    .each_grade_right{
+        width: 50%;
+    }
+    .each_grade li{
+        padding: 5px 30px;
+        vertical-align: middle;
+    }
+        .each_grade img{
+            width: 50px;
+        }
+
+.ads img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.about_container{
+    width: 100%;
+    height: auto;
+    border: 3px solid #707070;
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow:5px 5px 5px;
+}   
+    .about_title{
+        margin-left: 10%;
+    }
+    .about_intro{
+        margin-left: 15%;
+    }
+    .about_detail{
+        display: flex;
+        margin: 10px 15%;
+    }
+        .detail_left{
+            width: 45%;
+        }
+        .detail_right{
+            width: 25%;
+        }
+
+.adm_container{
+    width: 100%;
+    height: auto;
+    border: 3px solid #707070;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow:5px 5px 5px;
+    position: relative;
+}
+    .adm_title{
+            margin-left: 10%;
+        }
+    .rate{
+            position: absolute;
+                top: 20px;
+                left: 45%;
+        }
+    .adm_container a{
+        font-size: 18px;
+        border-bottom: solid 2px #707070;
+        position: absolute;
+            bottom: 15px;
+            right: 10%;
+    }
+    .adm_container i{
+        font-size: 18px;
+        color: #2C33F6;
+    }
+    .adm_container_in{
+        display: flex;
+        width: 80%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+        .adm_container_left{
+            width: 45%;
+        }
+        .adm_container_right{
+            width: 45%;
+        }
+            
+
+
+.cost_container{
+    width: 100%;
+    height: auto;
+    border: 3px solid #707070;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 20px;
+    box-shadow:5px 5px 5px;
+}
+    .cost_container p{
+        margin-left: 10%;
+    }
+    .cost_container_in{
+        display: flex;
+        width: 90%;
+        padding: 15px 0 15px 15px;
+        margin: 0 0 0 10%;
+        position: relative; 
+    }
+        .cost_container_left{
+            width: 45%;
+        }
+            .cost_four{
+                font-size: 30px;
+                text-decoration: underline;
+            }
+        .cost_container_right{
+            width: 45%;
+        }
+            .cost_container_right p{
+                font-size: 18px;
+                border-bottom: solid 2px #707070; 
+            }
+            .cost_container_right i{
+                font-size: 18px;
+                color: #2C33F6;
+            }
+
+        
+        

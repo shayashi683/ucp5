@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang=ja dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Docuent</title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+
+    <div class="platform__wrapper">
+      <div class="categories-header">
+        <div class="categories-header__container">
+            <div class="categories-header__content">
+                <div class="categories-header-meta">
+                  <div class="categories-description">
+                    <h1>2020 <%= @category.category_name %>ランキング</h1>
+                      <div class="overflow-text__content">
+                        <p><%= @category.intro %>&nbsp;
+                          <br><a href="/about/assessment">UCPによる評価基準について</a></p>
+                      </div>
+                  </div><br>
+                <ul class="social-share">
+                    <li class="social-share__button">
+                      <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
+                    　</li>
+                    <li class="social-share__button">
+                      <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+
+     <div class="categories_box">
+       <div class="search-topics-explorer__suggested-topics-wrap">
+         <ul class="search-topics-explorer__suggested-topics">
+            <li class="search-topics-explorer-list__item" data-char-total="0" data-char-total-digits="1">
+              <a class="search-topics-explorer-link" href=""> 学部ランキング</a>
+           </li>
+           <li class="search-topics-explorer-list__item" data-char-total="10" data-char-total-digits="1">
+             <a class="search-topics-explorer-link" href=""> 教育</a>
+           </li>
+           <li class="search-topics-explorer-list__item" data-char-total="27" data-char-total-digits="2">
+             <a class="search-topics-explorer-link" href="">教員</a>
+           </li>
+           <li class="search-topics-explorer-list__item" data-char-total="44" data-char-total-digits="2">
+             <a class="search-topics-explorer-link" href="">費用</a>
+           </li>
+           <li class="search-topics-explorer-list__item" data-char-total="61" data-char-total-digits="2">
+             <a class="search-topics-explorer-link" href="">設備</a>
+           </li>
+           <li>
+           <div class="search-topics-explorer__more--with-hint">
+           <button class="search-topics-explorer__more button--bare">
+             <div class="niche-icon-wrap"><svg class="niche-icon niche-icon--meatball" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <g xmlns="http://www.w3.org/2000/svg">
+                 <circle cx="12" cy="13" r="2.5"></circle>
+                 <circle cx="21.5" cy="13" r="2.5"></circle>
+                 <circle cx="2.5" cy="13" r="2.5"></circle>
+               </g>
+             </svg>
+             </div>
+           <span class="visually-hidden">More search topics</span>
+           </button>
+          </div>
+          </li>
+         </ul>         
+      </div>
+  <!-- <div id="container">
+    <div class="circle icon">
+      <span class="bar top"></span>
+      <span class="bar middle"></span>
+      <span class="bar bottom"></span>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $("#container").click(function(){
+      $(".icon").toggleClass("close");
+    })
+  </script> -->
+
+<!-- Contents -->
+<div class="search_results">
+  <ol class="search-results__list">
+
+    <li class="search-results__list__item" style="order:1">
+      <div class="search-result">
+        <div class="card">
+          <a class="search-result__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/">
+            <div class="search-result__no-photo-margin"></div>
+            <div class="card__inner">
+              <h2 class="search-result__title">Massachusetts Institute of Technology</h2>
+              <ul class="search-result-tagline">
+                <li class="search-result-tagline__item">4 Year<!-- --> </li>
+                <li class="search-result-tagline__item">Cambridge, MA<!-- --> </li>
+                <li class="search-result-tagline__item">
+                  <div class="review__stars review__stars--gray">
+                    <span class="review__stars__icon review__stars__icon--gray--40"></span>
+                    <span class="review__stars__number__reviews">619 reviews</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="search-result-badge">#1 Best Colleges in America</div>
+              <p class="search-result-feature">
+                <strong class="search-result-feature__author">Junior<!-- -->:</strong>&nbsp;
+                <span><span>MIT is an outstanding university with numerous and diverse opportunities in research and academics. Classes at MIT are indeed difficult, with homework and associated studying consuming a large chunk of time. The beauty of this is that it pushes students to go above and beyond their previous understanding of what they believed themselves to be capable of. Additionally, the explorative and creative atmosphere which springs from the vibrancy of the student body and the faculty is second to none. There are so many chances to do great things at MIT, even as an undergrad!<br></span></span>
+                <span class="search-result-feature__teaser">Read <!-- -->619<!-- --> <!-- -->Reviews</span></p>
+                <ul class="search-result-fact-list">
+                  <li class="search-result-fact-list__item">
+                    <figure class="search-result-grade">
+                      <div class="niche__grade niche__grade--small--a-plus">
+                        <div class="maru size_normal pink1">
+                          <div class="letter3">A+</div>
+                       </div>
+                     </div>
+                      <figcaption class="search-result-grade__label">Overall Niche Grade・</figcaption>
+                    </figure>
+                  </li>
+                  <li class="search-result-fact-list__item">
+                    <div class="search-result-fact">
+                      <span class="search-result-fact__value">7%</span>&nbsp;<span class="search-result-fact__label">Acceptance Rate・</span>
+                    </div>
+                  </li>
+                  <li class="search-result-fact-list__item">
+                    <div class="search-result-fact">
+                      <span class="search-result-fact__value">$18,971</span>&nbsp;<span class="search-result-fact__label">Net Price・</span>
+                    </div>
+                  </li>
+                  <li class="search-result-fact-list__item">
+                    <div class="search-result-fact">
+                      <span class="search-result-fact__value">1500-1570</span>&nbsp;<span class="search-result-fact__label">SAT Range</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <div class="card__action card__action--right card__action--not-padded">
+              <button class="button--search-result-atl button button--small button--compact button--green button--outline button--has-icon button--icon-left button--icon-heart">
+                <span class="add-to-list__text button__text">Add to List</span></button>
+                <div class="search-result-cta">
+                  <a class="search-result-cta__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/#scatterplot">Will You Get In?</a>
+                  <a class="search-result-cta__link" href="/colleges/compare/?type=college&amp;colleges=massachusetts-institute-of-technology">Compare</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      <li class="search-results__list__item" style="order:2">
+          <div class="search-result">
+            <div class="card">
+              <a class="search-result__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/">
+                <div class="search-result__no-photo-margin"></div>
+                <div class="card__inner">
+                  <h2 class="search-result__title">Massachusetts Institute of Technology</h2>
+                  <ul class="search-result-tagline">
+                    <li class="search-result-tagline__item">4 Year<!-- --> </li>
+                    <li class="search-result-tagline__item">Cambridge, MA<!-- --> </li>
+                    <li class="search-result-tagline__item">
+                      <div class="review__stars review__stars--gray">
+                        <span class="review__stars__icon review__stars__icon--gray--40"></span>
+                        <span class="review__stars__number__reviews">619 reviews</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="search-result-badge">#1 Best Colleges in America</div>
+                  <p class="search-result-feature">
+                    <strong class="search-result-feature__author">Junior<!-- -->:</strong>&nbsp;
+                    <span><span>MIT is an outstanding university with numerous and diverse opportunities in research and academics. Classes at MIT are indeed difficult, with homework and associated studying consuming a large chunk of time. The beauty of this is that it pushes students to go above and beyond their previous understanding of what they believed themselves to be capable of. Additionally, the explorative and creative atmosphere which springs from the vibrancy of the student body and the faculty is second to none. There are so many chances to do great things at MIT, even as an undergrad!<br></span></span>
+                    <span class="search-result-feature__teaser">Read <!-- -->619<!-- --> <!-- -->Reviews</span></p>
+                    <ul class="search-result-fact-list">
+                      <li class="search-result-fact-list__item">
+                        <figure class="search-result-grade">
+                          <div class="niche__grade niche__grade--small--a-plus">
+                            <div class="maru size_normal pink1">
+                              <div class="letter3">A+</div>
+                           </div>
+                         </div>
+                          <figcaption class="search-result-grade__label">Overall Niche Grade・</figcaption>
+                        </figure>
+                      </li>
+                      <li class="search-result-fact-list__item">
+                        <div class="search-result-fact">
+                          <span class="search-result-fact__value">7%</span>&nbsp;<span class="search-result-fact__label">Acceptance Rate・</span>
+                        </div>
+                      </li>
+                      <li class="search-result-fact-list__item">
+                        <div class="search-result-fact">
+                          <span class="search-result-fact__value">$18,971</span>&nbsp;<span class="search-result-fact__label">Net Price・</span>
+                        </div>
+                      </li>
+                      <li class="search-result-fact-list__item">
+                        <div class="search-result-fact">
+                          <span class="search-result-fact__value">1500-1570</span>&nbsp;<span class="search-result-fact__label">SAT Range</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+                <div class="card__action card__action--right card__action--not-padded">
+                  <button class="button--search-result-atl button button--small button--compact button--green button--outline button--has-icon button--icon-left button--icon-heart">
+                    <span class="add-to-list__text button__text">Add to List</span></button>
+                    <div class="search-result-cta">
+                      <a class="search-result-cta__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/#scatterplot">Will You Get In?</a>
+                      <a class="search-result-cta__link" href="/colleges/compare/?type=college&amp;colleges=massachusetts-institute-of-technology">Compare</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+      <li class="search-results__list__item" style="order:3">
+              <div class="search-result">
+                <div class="card">
+                  <a class="search-result__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/">
+                    <div class="search-result__no-photo-margin"></div>
+                    <div class="card__inner">
+                      <h2 class="search-result__title">Massachusetts Institute of Technology</h2>
+                      <ul class="search-result-tagline">
+                        <li class="search-result-tagline__item">4 Year<!-- --> </li>
+                        <li class="search-result-tagline__item">Cambridge, MA<!-- --> </li>
+                        <li class="search-result-tagline__item">
+                          <div class="review__stars review__stars--gray">
+                            <span class="review__stars__icon review__stars__icon--gray--40"></span>
+                            <span class="review__stars__number__reviews">619 reviews</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="search-result-badge">#1 Best Colleges in America</div>
+                      <p class="search-result-feature">
+                        <strong class="search-result-feature__author">Junior<!-- -->:</strong>&nbsp;
+                        <span><span>MIT is an outstanding university with numerous and diverse opportunities in research and academics. Classes at MIT are indeed difficult, with homework and associated studying consuming a large chunk of time. The beauty of this is that it pushes students to go above and beyond their previous understanding of what they believed themselves to be capable of. Additionally, the explorative and creative atmosphere which springs from the vibrancy of the student body and the faculty is second to none. There are so many chances to do great things at MIT, even as an undergrad!<br></span></span>
+                        <span class="search-result-feature__teaser">Read <!-- -->619<!-- --> <!-- -->Reviews</span></p>
+                        <ul class="search-result-fact-list">
+                          <li class="search-result-fact-list__item">
+                            <figure class="search-result-grade">
+                              <div class="niche__grade niche__grade--small--a-plus">
+                                <div class="maru size_normal pink1">
+                                  <div class="letter3">A+</div>
+                               </div>
+                             </div>
+                              <figcaption class="search-result-grade__label">Overall Niche Grade・</figcaption>
+                            </figure>
+                          </li>
+                          <li class="search-result-fact-list__item">
+                            <div class="search-result-fact">
+                              <span class="search-result-fact__value">7%</span>&nbsp;<span class="search-result-fact__label">Acceptance Rate・</span>
+                            </div>
+                          </li>
+                          <li class="search-result-fact-list__item">
+                            <div class="search-result-fact">
+                              <span class="search-result-fact__value">$18,971</span>&nbsp;<span class="search-result-fact__label">Net Price・</span>
+                            </div>
+                          </li>
+                          <li class="search-result-fact-list__item">
+                            <div class="search-result-fact">
+                              <span class="search-result-fact__value">1500-1570</span>&nbsp;<span class="search-result-fact__label">SAT Range</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </a>
+                    <div class="card__action card__action--right card__action--not-padded">
+                      <button class="button--search-result-atl button button--small button--compact button--green button--outline button--has-icon button--icon-left button--icon-heart">
+                        <span class="add-to-list__text button__text">Add to List</span></button>
+                        <div class="search-result-cta">
+                          <a class="search-result-cta__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/#scatterplot">Will You Get In?</a>
+                          <a class="search-result-cta__link" href="/colleges/compare/?type=college&amp;colleges=massachusetts-institute-of-technology">Compare</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+        <li class="search-results__list__item" style="order:4">
+                  <div class="search-result">
+                    <div class="card">
+                      <a class="search-result__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/">
+                        <div class="search-result__no-photo-margin"></div>
+                        <div class="card__inner">
+                          <h2 class="search-result__title">Massachusetts Institute of Technology</h2>
+                          <ul class="search-result-tagline">
+                            <li class="search-result-tagline__item">4 Year<!-- --> </li>
+                            <li class="search-result-tagline__item">Cambridge, MA<!-- --> </li>
+                            <li class="search-result-tagline__item">
+                              <div class="review__stars review__stars--gray">
+                                <span class="review__stars__icon review__stars__icon--gray--40"></span>
+                                <span class="review__stars__number__reviews">619 reviews</span>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="search-result-badge">#1 Best Colleges in America</div>
+                          <p class="search-result-feature">
+                            <strong class="search-result-feature__author">Junior<!-- -->:</strong>&nbsp;
+                            <span><span>MIT is an outstanding university with numerous and diverse opportunities in research and academics. Classes at MIT are indeed difficult, with homework and associated studying consuming a large chunk of time. The beauty of this is that it pushes students to go above and beyond their previous understanding of what they believed themselves to be capable of. Additionally, the explorative and creative atmosphere which springs from the vibrancy of the student body and the faculty is second to none. There are so many chances to do great things at MIT, even as an undergrad!<br></span></span>
+                            <span class="search-result-feature__teaser">Read <!-- -->619<!-- --> <!-- -->Reviews</span></p>
+                            <ul class="search-result-fact-list">
+                              <li class="search-result-fact-list__item">
+                                <figure class="search-result-grade">
+                                  <div class="niche__grade niche__grade--small--a-plus">
+                                    <div class="maru size_normal pink1">
+                                      <div class="letter3">A+</div>
+                                   </div>
+                                 </div>
+                                  <figcaption class="search-result-grade__label">Overall Niche Grade・</figcaption>
+                                </figure>
+                              </li>
+                              <li class="search-result-fact-list__item">
+                                <div class="search-result-fact">
+                                  <span class="search-result-fact__value">7%</span>&nbsp;<span class="search-result-fact__label">Acceptance Rate・</span>
+                                </div>
+                              </li>
+                              <li class="search-result-fact-list__item">
+                                <div class="search-result-fact">
+                                  <span class="search-result-fact__value">$18,971</span>&nbsp;<span class="search-result-fact__label">Net Price・</span>
+                                </div>
+                              </li>
+                              <li class="search-result-fact-list__item">
+                                <div class="search-result-fact">
+                                  <span class="search-result-fact__value">1500-1570</span>&nbsp;<span class="search-result-fact__label">SAT Range</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </a>
+                        <div class="card__action card__action--right card__action--not-padded">
+                          <button class="button--search-result-atl button button--small button--compact button--green button--outline button--has-icon button--icon-left button--icon-heart">
+                            <span class="add-to-list__text button__text">Add to List</span></button>
+                            <div class="search-result-cta">
+                              <a class="search-result-cta__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/#scatterplot">Will You Get In?</a>
+                              <a class="search-result-cta__link" href="/colleges/compare/?type=college&amp;colleges=massachusetts-institute-of-technology">Compare</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+    <li class="search-results__list__item" style="order:5">
+                      <div class="search-result">
+                        <div class="card">
+                          <a class="search-result__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/">
+                            <div class="search-result__no-photo-margin"></div>
+                            <div class="card__inner">
+                              <h2 class="search-result__title">Massachusetts Institute of Technology</h2>
+                              <ul class="search-result-tagline">
+                                <li class="search-result-tagline__item">4 Year<!-- --> </li>
+                                <li class="search-result-tagline__item">Cambridge, MA<!-- --> </li>
+                                <li class="search-result-tagline__item">
+                                  <div class="review__stars review__stars--gray">
+                                    <span class="review__stars__icon review__stars__icon--gray--40"></span>
+                                    <span class="review__stars__number__reviews">619 reviews</span>
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="search-result-badge">#1 Best Colleges in America</div>
+                              <p class="search-result-feature">
+                                <strong class="search-result-feature__author">Junior<!-- -->:</strong>&nbsp;
+                                <span><span>MIT is an outstanding university with numerous and diverse opportunities in research and academics. Classes at MIT are indeed difficult, with homework and associated studying consuming a large chunk of time. The beauty of this is that it pushes students to go above and beyond their previous understanding of what they believed themselves to be capable of. Additionally, the explorative and creative atmosphere which springs from the vibrancy of the student body and the faculty is second to none. There are so many chances to do great things at MIT, even as an undergrad!<br></span></span>
+                                <span class="search-result-feature__teaser">Read <!-- -->619<!-- --> <!-- -->Reviews</span></p>
+                                <ul class="search-result-fact-list">
+                                  <li class="search-result-fact-list__item">
+                                    <figure class="search-result-grade">
+                                      <div class="niche__grade niche__grade--small--a-plus">
+                                        <div class="maru size_normal pink1">
+                                          <div class="letter3">A+</div>
+                                       </div>
+                                     </div>
+                                      <figcaption class="search-result-grade__label">Overall Niche Grade・</figcaption>
+                                    </figure>
+                                  </li>
+                                  <li class="search-result-fact-list__item">
+                                    <div class="search-result-fact">
+                                      <span class="search-result-fact__value">7%</span>&nbsp;<span class="search-result-fact__label">Acceptance Rate・</span>
+                                    </div>
+                                  </li>
+                                  <li class="search-result-fact-list__item">
+                                    <div class="search-result-fact">
+                                      <span class="search-result-fact__value">$18,971</span>&nbsp;<span class="search-result-fact__label">Net Price・</span>
+                                    </div>
+                                  </li>
+                                  <li class="search-result-fact-list__item">
+                                    <div class="search-result-fact">
+                                      <span class="search-result-fact__value">1500-1570</span>&nbsp;<span class="search-result-fact__label">SAT Range</span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </a>
+                            <div class="card__action card__action--right card__action--not-padded">
+                              <button class="button--search-result-atl button button--small button--compact button--green button--outline button--has-icon button--icon-left button--icon-heart">
+                                <span class="add-to-list__text button__text">Add to List</span></button>
+                                <div class="search-result-cta">
+                                  <a class="search-result-cta__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/#scatterplot">Will You Get In?</a>
+                                  <a class="search-result-cta__link" href="/colleges/compare/?type=college&amp;colleges=massachusetts-institute-of-technology">Compare</a>
+                                </div>
+                              </div>
+                  </div>
+             </div>
+          </li>
+
+          <li class="search-results__list__item" style="order:6">
+                            <div class="search-result">
+                              <div class="card">
+                                <a class="search-result__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/">
+                                  <div class="search-result__no-photo-margin"></div>
+                                  <div class="card__inner">
+                                    <h2 class="search-result__title">Massachusetts Institute of Technology</h2>
+                                    <ul class="search-result-tagline">
+                                      <li class="search-result-tagline__item">4 Year<!-- --> </li>
+                                      <li class="search-result-tagline__item">Cambridge, MA<!-- --> </li>
+                                      <li class="search-result-tagline__item">
+                                        <div class="review__stars review__stars--gray">
+                                          <span class="review__stars__icon review__stars__icon--gray--40"></span>
+                                          <span class="review__stars__number__reviews">619 reviews</span>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                    <div class="search-result-badge">#1 Best Colleges in America</div>
+                                    <p class="search-result-feature">
+                                      <strong class="search-result-feature__author">Junior<!-- -->:</strong>&nbsp;
+                                      <span><span>MIT is an outstanding university with numerous and diverse opportunities in research and academics. Classes at MIT are indeed difficult, with homework and associated studying consuming a large chunk of time. The beauty of this is that it pushes students to go above and beyond their previous understanding of what they believed themselves to be capable of. Additionally, the explorative and creative atmosphere which springs from the vibrancy of the student body and the faculty is second to none. There are so many chances to do great things at MIT, even as an undergrad!<br></span></span>
+                                      <span class="search-result-feature__teaser">Read <!-- -->619<!-- --> <!-- -->Reviews</span></p>
+                                      <ul class="search-result-fact-list">
+                                        <li class="search-result-fact-list__item">
+                                          <figure class="search-result-grade">
+                                            <div class="niche__grade niche__grade--small--a-plus">
+                                              <div class="maru size_normal pink1">
+                                                <div class="letter3">A+</div>
+                                             </div>
+                                           </div>
+                                            <figcaption class="search-result-grade__label">Overall Niche Grade・</figcaption>
+                                          </figure>
+                                        </li>
+                                        <li class="search-result-fact-list__item">
+                                          <div class="search-result-fact">
+                                            <span class="search-result-fact__value">7%</span>&nbsp;<span class="search-result-fact__label">Acceptance Rate・</span>
+                                          </div>
+                                        </li>
+                                        <li class="search-result-fact-list__item">
+                                          <div class="search-result-fact">
+                                            <span class="search-result-fact__value">$18,971</span>&nbsp;<span class="search-result-fact__label">Net Price・</span>
+                                          </div>
+                                        </li>
+                                        <li class="search-result-fact-list__item">
+                                          <div class="search-result-fact">
+                                            <span class="search-result-fact__value">1500-1570</span>&nbsp;<span class="search-result-fact__label">SAT Range</span>
+                                          </div>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </a>
+                                  <div class="card__action card__action--right card__action--not-padded">
+                                    <button class="button--search-result-atl button button--small button--compact button--green button--outline button--has-icon button--icon-left button--icon-heart">
+                                      <span class="add-to-list__text button__text">Add to List</span></button>
+                                      <div class="search-result-cta">
+                                        <a class="search-result-cta__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/#scatterplot">Will You Get In?</a>
+                                        <a class="search-result-cta__link" href="/colleges/compare/?type=college&amp;colleges=massachusetts-institute-of-technology">Compare</a>
+                                      </div>
+                                    </div>
+                        </div>
+                   </div>
+                </li>
+                <li class="search-results__list__item" style="order:7">
+                                  <div class="search-result">
+                                    <div class="card">
+                                      <a class="search-result__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/">
+                                        <div class="search-result__no-photo-margin"></div>
+                                        <div class="card__inner">
+                                          <h2 class="search-result__title">Massachusetts Institute of Technology</h2>
+                                          <ul class="search-result-tagline">
+                                            <li class="search-result-tagline__item">4 Year<!-- --> </li>
+                                            <li class="search-result-tagline__item">Cambridge, MA<!-- --> </li>
+                                            <li class="search-result-tagline__item">
+                                              <div class="review__stars review__stars--gray">
+                                                <span class="review__stars__icon review__stars__icon--gray--40"></span>
+                                                <span class="review__stars__number__reviews">619 reviews</span>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                          <div class="search-result-badge">#1 Best Colleges in America</div>
+                                          <p class="search-result-feature">
+                                            <strong class="search-result-feature__author">Junior<!-- -->:</strong>&nbsp;
+                                            <span><span>MIT is an outstanding university with numerous and diverse opportunities in research and academics. Classes at MIT are indeed difficult, with homework and associated studying consuming a large chunk of time. The beauty of this is that it pushes students to go above and beyond their previous understanding of what they believed themselves to be capable of. Additionally, the explorative and creative atmosphere which springs from the vibrancy of the student body and the faculty is second to none. There are so many chances to do great things at MIT, even as an undergrad!<br></span></span>
+                                            <span class="search-result-feature__teaser">Read <!-- -->619<!-- --> <!-- -->Reviews</span></p>
+                                            <ul class="search-result-fact-list">
+                                              <li class="search-result-fact-list__item">
+                                                <figure class="search-result-grade">
+                                                  <div class="niche__grade niche__grade--small--a-plus">
+                                                    <div class="maru size_normal pink1">
+                                                      <div class="letter3">A+</div>
+                                                   </div>
+                                                 </div>
+                                                  <figcaption class="search-result-grade__label">Overall Niche Grade・</figcaption>
+                                                </figure>
+                                              </li>
+                                              <li class="search-result-fact-list__item">
+                                                <div class="search-result-fact">
+                                                  <span class="search-result-fact__value">7%</span>&nbsp;<span class="search-result-fact__label">Acceptance Rate・</span>
+                                                </div>
+                                              </li>
+                                              <li class="search-result-fact-list__item">
+                                                <div class="search-result-fact">
+                                                  <span class="search-result-fact__value">$18,971</span>&nbsp;<span class="search-result-fact__label">Net Price・</span>
+                                                </div>
+                                              </li>
+                                              <li class="search-result-fact-list__item">
+                                                <div class="search-result-fact">
+                                                  <span class="search-result-fact__value">1500-1570</span>&nbsp;<span class="search-result-fact__label">SAT Range</span>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </a>
+                                        <div class="card__action card__action--right card__action--not-padded">
+                                          <button class="button--search-result-atl button button--small button--compact button--green button--outline button--has-icon button--icon-left button--icon-heart">
+                                            <span class="add-to-list__text button__text">Add to List</span></button>
+                                            <div class="search-result-cta">
+                                              <a class="search-result-cta__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/#scatterplot">Will You Get In?</a>
+                                              <a class="search-result-cta__link" href="/colleges/compare/?type=college&amp;colleges=massachusetts-institute-of-technology">Compare</a>
+                                            </div>
+                                          </div>
+                              </div>
+                         </div>
+                      </li>
+                      <li class="search-results__list__item" style="order:8">
+                                        <div class="search-result">
+                                          <div class="card">
+                                            <a class="search-result__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/">
+                                              <div class="search-result__no-photo-margin"></div>
+                                              <div class="card__inner">
+                                                <h2 class="search-result__title">Massachusetts Institute of Technology</h2>
+                                                <ul class="search-result-tagline">
+                                                  <li class="search-result-tagline__item">4 Year<!-- --> </li>
+                                                  <li class="search-result-tagline__item">Cambridge, MA<!-- --> </li>
+                                                  <li class="search-result-tagline__item">
+                                                    <div class="review__stars review__stars--gray">
+                                                      <span class="review__stars__icon review__stars__icon--gray--40"></span>
+                                                      <span class="review__stars__number__reviews">619 reviews</span>
+                                                    </div>
+                                                  </li>
+                                                </ul>
+                                                <div class="search-result-badge">#1 Best Colleges in America</div>
+                                                <p class="search-result-feature">
+                                                  <strong class="search-result-feature__author">Junior<!-- -->:</strong>&nbsp;
+                                                  <span><span>MIT is an outstanding university with numerous and diverse opportunities in research and academics. Classes at MIT are indeed difficult, with homework and associated studying consuming a large chunk of time. The beauty of this is that it pushes students to go above and beyond their previous understanding of what they believed themselves to be capable of. Additionally, the explorative and creative atmosphere which springs from the vibrancy of the student body and the faculty is second to none. There are so many chances to do great things at MIT, even as an undergrad!<br></span></span>
+                                                  <span class="search-result-feature__teaser">Read <!-- -->619<!-- --> <!-- -->Reviews</span></p>
+                                                  <ul class="search-result-fact-list">
+                                                    <li class="search-result-fact-list__item">
+                                                      <figure class="search-result-grade">
+                                                        <div class="niche__grade niche__grade--small--a-plus">
+                                                          <div class="maru size_normal pink1">
+                                                            <div class="letter3">A+</div>
+                                                         </div>
+                                                       </div>
+                                                        <figcaption class="search-result-grade__label">Overall Niche Grade・</figcaption>
+                                                      </figure>
+                                                    </li>
+                                                    <li class="search-result-fact-list__item">
+                                                      <div class="search-result-fact">
+                                                        <span class="search-result-fact__value">7%</span>&nbsp;<span class="search-result-fact__label">Acceptance Rate・</span>
+                                                      </div>
+                                                    </li>
+                                                    <li class="search-result-fact-list__item">
+                                                      <div class="search-result-fact">
+                                                        <span class="search-result-fact__value">$18,971</span>&nbsp;<span class="search-result-fact__label">Net Price・</span>
+                                                      </div>
+                                                    </li>
+                                                    <li class="search-result-fact-list__item">
+                                                      <div class="search-result-fact">
+                                                        <span class="search-result-fact__value">1500-1570</span>&nbsp;<span class="search-result-fact__label">SAT Range</span>
+                                                      </div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </a>
+                                              <div class="card__action card__action--right card__action--not-padded">
+                                                <button class="button--search-result-atl button button--small button--compact button--green button--outline button--has-icon button--icon-left button--icon-heart">
+                                                  <span class="add-to-list__text button__text">Add to List</span></button>
+                                                  <div class="search-result-cta">
+                                                    <a class="search-result-cta__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/#scatterplot">Will You Get In?</a>
+                                                    <a class="search-result-cta__link" href="/colleges/compare/?type=college&amp;colleges=massachusetts-institute-of-technology">Compare</a>
+                                                  </div>
+                                                </div>
+                                    </div>
+                               </div>
+                            </li>
+
+            <li class="search-results__list__item" style="order:9">
+                                <div class="search-result">
+                                          <div class="card">
+                                                  <a class="search-result__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/">
+                                                    <div class="search-result__no-photo-margin"></div>
+                                                    <div class="card__inner">
+                                                      <h2 class="search-result__title">Massachusetts Institute of Technology</h2>
+                                                      <ul class="search-result-tagline">
+                                                        <li class="search-result-tagline__item">4 Year<!-- --> </li>
+                                                        <li class="search-result-tagline__item">Cambridge, MA<!-- --> </li>
+                                                        <li class="search-result-tagline__item">
+                                                          <div class="review__stars review__stars--gray">
+                                                            <span class="review__stars__icon review__stars__icon--gray--40"></span>
+                                                            <span class="review__stars__number__reviews">619 reviews</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                      <div class="search-result-badge">#1 Best Colleges in America</div>
+                                                      <p class="search-result-feature">
+                                                        <strong class="search-result-feature__author">Junior<!-- -->:</strong>&nbsp;
+                                                        <span><span>MIT is an outstanding university with numerous and diverse opportunities in research and academics. Classes at MIT are indeed difficult, with homework and associated studying consuming a large chunk of time. The beauty of this is that it pushes students to go above and beyond their previous understanding of what they believed themselves to be capable of. Additionally, the explorative and creative atmosphere which springs from the vibrancy of the student body and the faculty is second to none. There are so many chances to do great things at MIT, even as an undergrad!<br></span></span>
+                                                        <span class="search-result-feature__teaser">Read <!-- -->619<!-- --> <!-- -->Reviews</span></p>
+                                                        <ul class="search-result-fact-list">
+                                                          <li class="search-result-fact-list__item">
+                                                            <figure class="search-result-grade">
+                                                              <div class="niche__grade niche__grade--small--a-plus">
+                                                                <div class="maru size_normal pink1">
+                                                                  <div class="letter3">A+</div>
+                                                               </div>
+                                                             </div>
+                                                              <figcaption class="search-result-grade__label">Overall Niche Grade・</figcaption>
+                                                            </figure>
+                                                          </li>
+                                                          <li class="search-result-fact-list__item">
+                                                            <div class="search-result-fact">
+                                                              <span class="search-result-fact__value">7%</span>&nbsp;<span class="search-result-fact__label">Acceptance Rate・</span>
+                                                            </div>
+                                                          </li>
+                                                          <li class="search-result-fact-list__item">
+                                                            <div class="search-result-fact">
+                                                              <span class="search-result-fact__value">$18,971</span>&nbsp;<span class="search-result-fact__label">Net Price・</span>
+                                                            </div>
+                                                          </li>
+                                                          <li class="search-result-fact-list__item">
+                                                            <div class="search-result-fact">
+                                                              <span class="search-result-fact__value">1500-1570</span>&nbsp;<span class="search-result-fact__label">SAT Range</span>
+                                                            </div>
+                                                          </li>
+                                                        </ul>
+                                                      </div>
+                                                    </a>
+                                                    <div class="card__action card__action--right card__action--not-padded">
+                                                      <button class="button--search-result-atl button button--small button--compact button--green button--outline button--has-icon button--icon-left button--icon-heart">
+                                                        <span class="add-to-list__text button__text">Add to List</span></button>
+                                                        <div class="search-result-cta">
+                                                          <a class="search-result-cta__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/#scatterplot">Will You Get In?</a>
+                                                          <a class="search-result-cta__link" href="/colleges/compare/?type=college&amp;colleges=massachusetts-institute-of-technology">Compare</a>
+                                                        </div>
+                                                      </div>
+                                          </div>
+                                     </div>
+                                  </li>
+
+                                  <li class="search-results__list__item" style="order:10">
+                                                    <div class="search-result">
+                                                      <div class="card">
+                                                        <a class="search-result__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/">
+                                                          <div class="search-result__no-photo-margin"></div>
+                                                          <div class="card__inner">
+                                                            <h2 class="search-result__title">Massachusetts Institute of Technology</h2>
+                                                            <ul class="search-result-tagline">
+                                                              <li class="search-result-tagline__item">4 Year<!-- --> </li>
+                                                              <li class="search-result-tagline__item">Cambridge, MA<!-- --> </li>
+                                                              <li class="search-result-tagline__item">
+                                                                <div class="review__stars review__stars--gray">
+                                                                  <span class="review__stars__icon review__stars__icon--gray--40"></span>
+                                                                  <span class="review__stars__number__reviews">619 reviews</span>
+                                                                </div>
+                                                              </li>
+                                                            </ul>
+                                                            <div class="search-result-badge">#1 Best Colleges in America</div>
+                                                            <p class="search-result-feature">
+                                                              <strong class="search-result-feature__author">Junior<!-- -->:</strong>&nbsp;
+                                                              <span><span>MIT is an outstanding university with numerous and diverse opportunities in research and academics. Classes at MIT are indeed difficult, with homework and associated studying consuming a large chunk of time. The beauty of this is that it pushes students to go above and beyond their previous understanding of what they believed themselves to be capable of. Additionally, the explorative and creative atmosphere which springs from the vibrancy of the student body and the faculty is second to none. There are so many chances to do great things at MIT, even as an undergrad!<br></span></span>
+                                                              <span class="search-result-feature__teaser">Read <!-- -->619<!-- --> <!-- -->Reviews</span></p>
+                                                              <ul class="search-result-fact-list">
+                                                                <li class="search-result-fact-list__item">
+                                                                  <figure class="search-result-grade">
+                                                                    <div class="niche__grade niche__grade--small--a-plus">
+                                                                      <div class="maru size_normal pink1">
+                                                                        <div class="letter3">A+</div>
+                                                                     </div>
+                                                                   </div>
+                                                                    <figcaption class="search-result-grade__label">Overall Niche Grade・</figcaption>
+                                                                  </figure>
+                                                                </li>
+                                                                <li class="search-result-fact-list__item">
+                                                                  <div class="search-result-fact">
+                                                                    <span class="search-result-fact__value">7%</span>&nbsp;<span class="search-result-fact__label">Acceptance Rate・</span>
+                                                                  </div>
+                                                                </li>
+                                                                <li class="search-result-fact-list__item">
+                                                                  <div class="search-result-fact">
+                                                                    <span class="search-result-fact__value">$18,971</span>&nbsp;<span class="search-result-fact__label">Net Price・</span>
+                                                                  </div>
+                                                                </li>
+                                                                <li class="search-result-fact-list__item">
+                                                                  <div class="search-result-fact">
+                                                                    <span class="search-result-fact__value">1500-1570</span>&nbsp;<span class="search-result-fact__label">SAT Range</span>
+                                                                  </div>
+                                                                </li>
+                                                              </ul>
+                                                            </div>
+                                                          </a>
+                                                          <div class="card__action card__action--right card__action--not-padded">
+                                                            <button class="button--search-result-atl button button--small button--compact button--green button--outline button--has-icon button--icon-left button--icon-heart">
+                                                              <span class="add-to-list__text button__text">Add to List</span></button>
+                                                              <div class="search-result-cta">
+                                                                <a class="search-result-cta__link" href="https://www.niche.com/colleges/massachusetts-institute-of-technology/#scatterplot">Will You Get In?</a>
+                                                                <a class="search-result-cta__link" href="/colleges/compare/?type=college&amp;colleges=massachusetts-institute-of-technology">Compare</a>
+                                                              </div>
+                                                            </div>
+                                                </div>
+                                           </div>
+                                        </li>
+      </ol>
+    </div>
+  </body>
+</html>
