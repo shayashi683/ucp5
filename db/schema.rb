@@ -44,8 +44,6 @@ ActiveRecord::Schema.define(version: 2020_06_29_052816) do
   create_table "colleges_faculties", id: :serial, force: :cascade do |t|
     t.integer "college_id"
     t.integer "faculty_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "elements_edus", force: :cascade do |t|
@@ -216,22 +214,13 @@ ActiveRecord::Schema.define(version: 2020_06_29_052816) do
     t.decimal "scrape_the"
   end
 
-  add_foreign_key "assessments", "colleges_faculties", name: "assessments_colleges_faculty_id_fkey", on_update: :cascade, on_delete: :cascade
   add_foreign_key "colleges_faculties", "colleges", name: "colleges_faculties_college_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "colleges_faculties", "faculties", name: "colleges_faculties_faculty_id_fkey"
+  add_foreign_key "colleges_faculties", "faculties", name: "colleges_faculties_faculty_id_fkey", on_update: :cascade, on_delete: :cascade
   add_foreign_key "elements_edus", "evaluate_edus", name: "elements_edus_evaluste_edu_id_fkey", on_update: :cascade, on_delete: :cascade
   add_foreign_key "elements_edus", "evaluate_lives", name: "elements_edus_evaluate_life_id_fkey", on_update: :cascade, on_delete: :cascade
   add_foreign_key "elements_edus", "evaluate_staffs", name: "elements_edus_evaluate_staff_id_fkey", on_update: :cascade, on_delete: :cascade
   add_foreign_key "elements_lives", "evaluate_lives", name: "elements_lives_evaluate_life_id_fkey", on_update: :cascade, on_delete: :cascade
   add_foreign_key "elements_staffs", "evaluate_staffs", name: "elements_staffs_evaluate_staff_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "evaluate_costs", "colleges_faculties", name: "evaluate_costs_colleges_faculty_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "evaluate_edus", "colleges_faculties", name: "evaluate_edus_colleges_faculty_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "evaluate_facilities", "colleges_faculties", name: "evaluate_facilities_colleges_faculty_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "evaluate_internationals", "colleges_faculties", name: "evaluate_internationals_colleges_faculty_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "evaluate_lives", "colleges_faculties", name: "evaluate_lives_colleges_faculty_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "evaluate_reviews", "colleges_faculties", name: "evaluate_reviews_colleges_faculty_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "evaluate_staffs", "colleges_faculties", name: "evaluate_staffs_colleges_faculty_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "rankings", "colleges_faculties", name: "rankings_colleges_faculty_id_fkey", on_update: :cascade, on_delete: :cascade
   add_foreign_key "scrape_facilities", "evaluate_facilities", name: "scrape_facilities_evaluate_facility_id_fkey", on_update: :cascade, on_delete: :cascade
   add_foreign_key "scrape_lives", "evaluate_lives", name: "scrape_lives_evaluate_life_id_fkey", on_update: :cascade, on_delete: :cascade
   add_foreign_key "scrape_reviews", "evaluate_reviews", name: "scrape_reviews_evaluate_review_id_fkey", on_update: :cascade, on_delete: :cascade

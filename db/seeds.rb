@@ -80,7 +80,7 @@ ScrapeStaff.create!(:evaluate_staff_id => 2, :scrape_repu_teacher => 4.0)
 ScrapeStaff.create!(:evaluate_staff_id => 3, :scrape_repu_teacher => 3.5)
 ScrapeStaff.create!(:evaluate_staff_id => 4, :scrape_repu_teacher => 2.7)
 
-ScrapeTeacherOutcome.create!(:evaluate_staff_id => 1, :scrape_outcome_teacher => 20.2)
+ScrapeTeacherOutcome.create!(:evaluate_staff_id => 1, :scrape_outcome_teacher => ScrapeTeacherOutcome.fuga_urls)
 ScrapeTeacherOutcome.create!(:evaluate_staff_id => 2, :scrape_outcome_teacher => 15.5)
 ScrapeTeacherOutcome.create!(:evaluate_staff_id => 3, :scrape_outcome_teacher => 24.4)
 ScrapeTeacherOutcome.create!(:evaluate_staff_id => 4, :scrape_outcome_teacher => 19.9)
