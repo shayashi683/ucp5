@@ -46,7 +46,7 @@ class EvaluateEdu < ApplicationRecord
 
     def self.update_all_education_grade
         all.each do |evaluate_edu|
-            evaluate_edu.update(education_grade: evaluate_edu.calc_education_grade(evaluate_edu))
+            evaluate_edu.update(education_grade: evaluate_edu.calc_education_grade)
         end
      end
         def mean(array)
@@ -64,9 +64,8 @@ class EvaluateEdu < ApplicationRecord
             p zscore
         end
 
-    def calc_education_grade(evaluate_edu)
-        self.zscore(evaluate_edu.to_a.pluck(:curriculum_points))
-    end
-
+    def calc_education_grade
+        self.curriculum_points
+     end
 
 end
