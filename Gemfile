@@ -45,6 +45,9 @@ gem 'font-awesome-sass', '~> 5.4.1'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem "daru"
 gem 'mechanize'
+gem 'devise'
+gem 'rails_admin', '~> 2.0.0.beta'
+gem 'cancancan'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
