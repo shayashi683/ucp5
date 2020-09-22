@@ -70,20 +70,20 @@ EvaluateReview.create!(:colleges_faculty_id => 2)
 EvaluateReview.create!(:colleges_faculty_id => 3)
 EvaluateReview.create!(:colleges_faculty_id => 4)
 
+StaffEach.create!(:evaluate_staff_id => 1, :staff_name => "渋沢賢一")
+StaffEach.create!(:evaluate_staff_id => 2, :staff_name => "渡部晃也")
+StaffEach.create!(:evaluate_staff_id => 3, :staff_name => "高橋二世")
+StaffEach.create!(:evaluate_staff_id => 4, :staff_name => "佐結新作")
+
 ElementsEdu.create!(:evaluate_edu_id => 1, :evaluate_staff_id => 1, :evaluate_life_id => 1,:faculty_student_n => 1268, :faculty_teacher_n => 27, :apply_n => 1152, :admin_n => 319, :entry_n => 294, :college_delay_n => 58.0, :college_student_n => 30602.0)
 ElementsEdu.create!(:evaluate_edu_id => 2, :evaluate_staff_id => 2, :evaluate_life_id => 2, :faculty_student_n => 268, :faculty_teacher_n => 17, :apply_n => 352, :admin_n => 70, :entry_n => 64, :college_delay_n => 24.0, :college_student_n => 3602.0)
 ElementsEdu.create!(:evaluate_edu_id => 3, :evaluate_staff_id => 3, :evaluate_life_id => 3, :faculty_student_n => 300, :faculty_teacher_n => 37, :apply_n => 300, :admin_n => 40, :entry_n => 194, :college_delay_n => 128.0, :college_student_n => 2020.0)
 ElementsEdu.create!(:evaluate_edu_id => 4, :evaluate_staff_id => 4, :evaluate_life_id => 4, :faculty_student_n => 1230, :faculty_teacher_n => 67, :apply_n => 900, :admin_n => 200, :entry_n => 93, :college_delay_n => 48.0, :college_student_n => 3003.0)
 
-ScrapeStaff.create!(:evaluate_staff_id => 1, :scrape_repu_teacher => 4.2)
-ScrapeStaff.create!(:evaluate_staff_id => 2, :scrape_repu_teacher => 4.0)
-ScrapeStaff.create!(:evaluate_staff_id => 3, :scrape_repu_teacher => 3.5)
-ScrapeStaff.create!(:evaluate_staff_id => 4, :scrape_repu_teacher => 2.7)
-
-ScrapeTeacherOutcome.create!(:evaluate_staff_id => 1, :scrape_outcome_teacher => ScrapeTeacherOutcome.fuga_urls)
-ScrapeTeacherOutcome.create!(:evaluate_staff_id => 2, :scrape_outcome_teacher => 15.5)
-ScrapeTeacherOutcome.create!(:evaluate_staff_id => 3, :scrape_outcome_teacher => 24.4)
-ScrapeTeacherOutcome.create!(:evaluate_staff_id => 4, :scrape_outcome_teacher => 19.9)
+ScrapeStaff.create!(:staff_each_id => 1, :rm_awards => 4.2, :rm_papers => 4.2,:rm_misc => 4.2,:rm_books => 4.2)
+ScrapeStaff.create!(:staff_each_id => 2, :rm_awards => 4.2, :rm_papers => 4.2,:rm_misc => 4.2,:rm_books => 4.2)
+ScrapeStaff.create!(:staff_each_id => 3, :rm_awards => 3.2, :rm_papers => 3.2,:rm_misc => 3.2,:rm_books => 3.2)
+ScrapeStaff.create!(:staff_each_id => 4, :rm_awards => 3.2, :rm_papers => 3.2,:rm_misc => 3.2,:rm_books => 3.2)
 
 ElementsStaff.create!(:evaluate_staff_id => 1, :teacher_expense => 17600, :staff_expense => 15500, :college_teacher_n => 400, :college_staff_n => 374, :faculty_foreign_teacher_n => 3, :faculty_female_teacher_n => 4)
 ElementsStaff.create!(:evaluate_staff_id => 2, :teacher_expense => 7200, :staff_expense => 4500, :college_teacher_n => 67, :college_staff_n => 34, :faculty_foreign_teacher_n => 5, :faculty_female_teacher_n => 6)
@@ -124,7 +124,6 @@ EvaluateEdu.update_all_education_grade
 EvaluateStaff.update_all_salary_staff
 EvaluateStaff.update_all_teachers_diversity
 EvaluateStaff.update_all_teachers_gender
-EvaluateStaff.update_all_repu_teacher
 EvaluateStaff.update_all_outcome_staff
 
 EvaluateFacility.update_all_facility_repu

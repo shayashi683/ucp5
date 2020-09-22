@@ -1,8 +1,11 @@
 class CreateScrapeStaffs < ActiveRecord::Migration[5.2]
   def change
     create_table :scrape_staffs do |t|
-      t.references :evaluate_staff, foreign_key: true
-      t.numeric :scrape_repu_teacher
+      t.references :staff_each, foreign_key: true
+      t.numeric :rm_awards
+      t.numeric :rm_papers
+      t.numeric :rm_misc
+      t.numeric :rm_books
 
       t.timestamps
     end

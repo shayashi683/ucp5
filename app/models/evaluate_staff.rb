@@ -1,7 +1,6 @@
 class EvaluateStaff < ApplicationRecord
     belongs_to :assessment, optional: true
-    has_one :scrape_staff
-    has_one :scrape_teacher_outcome
+    has_one :staff_each
     has_one :elements_staff
     has_one :elements_edu
 
@@ -32,15 +31,9 @@ class EvaluateStaff < ApplicationRecord
         self.elements_staff.faculty_female_teacher_n * 100/ self.elements_edu.faculty_teacher_n
     end
 
-    def self.update_all_repu_teacher
-        all.each do |evaluate_staff|
-            evaluate_staff.update(repu_teacher: evaluate_staff.scrape_staff.scrape_repu_teacher)
-        end
-    end
-
     def self.update_all_outcome_staff
         all.each do |evaluate_staff|
-            evaluate_staff.update(outcome_staff: evaluate_staff.scrape_teacher_outcome.scrape_outcome_teacher)
+            evaluate_staff.update(outcome_staff: evaluate_staff.staff_each.rm_points)
         end
     end
  
